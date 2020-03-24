@@ -1,0 +1,49 @@
+Arguments: 
+  /Users/zhoulianyi/.nvm/versions/node/v9.11.2/bin/node /usr/local/Cellar/yarn/1.9.4/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/zhoulianyi/.nvm/versions/node/v9.11.2/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Apple/bin:/Users/zhoulianyi/.nvm/versions/node/v10.5.0/bin:/Users/zhoulianyi/Applications/apache-maven-3.5.4/bin:/Users/zhoulianyi/Applications/phantomjs-2.1.1-macosx/bin:/Users/zhoulianyi/Applications/slimerjs
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  9.11.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: http://192.168.248.176:7001/chalk: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js:138128:19)
+      at ontimeout (timers.js:466:11)
+      at tryOnTimeout (timers.js:304:5)
+      at Timer.listOnTimeout (timers.js:267:5)
+
+npm manifest: 
+  {
+    "private": true,
+    "name": "RasDash",
+    "version": "0.3.4",
+    "description": "Raspberry Pi dashboard, powered by NodeJS.",
+    "main": "app.js",
+    "scripts": {
+      "start": "sudo ./run",
+      "test": "node test.js"
+    },
+    "author": "Ben Sykes",
+    "license": "ISC",
+    "dependencies": {
+      "chalk": "^2.4.2",
+      "ejs": "^2.6.1",
+      "express": "^4.16.4",
+      "path": "^0.12.7",
+      "systeminformation": "^4.1.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

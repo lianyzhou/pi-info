@@ -1,0 +1,80 @@
+<!----------------------------------------!>
+<!-- RASDASH INDEX - (C)2019: Ben Sykes --!>
+<!----------------------------------------->
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <!-- Base Header -->
+    <% include ../partials/headbase.ejs %>
+      <link data-react-helmet="true" rel="icon" href="/images/favicon.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  </head>
+
+  <body>
+    <table class="table table-bordered table-striped table-pi">
+        <tbody>
+            <tr>
+                <td>CPU温度</td>
+                <td>
+                    <span  id="cpu-temp"></span>
+                    &#176;
+                </td>
+            </tr>
+            <tr>
+                <td>CPU利用率</td>
+                <td id="cpu-usage"></td>
+            </tr>
+            <tr>
+                <td>内存利用率</td>
+                <td>
+                    <span id="ram-usage"></span>%
+                </td>
+            </tr>
+            <tr>
+                <td>内存使用(MB)</td>
+                <td>
+                    <span id="ram-used"></span> /
+                    <span id="ram-total"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>硬盘利用率</td>
+                <td>
+                    <span id="disk-usage"></span>%
+                </td>
+            </tr>
+            <tr>
+                <td>硬盘使用(GB)</td>
+                <td>
+                    <span id="disk-used"></span> /
+                    <span id="disk-total"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>运行时间</td>
+                <td id="server-uptime"></td>
+            </tr>
+
+            <tr>
+                <td>网卡传输(Kbit/s)</td>
+                <td id="network-transmit-wlan0"></td>
+            </tr>
+
+            <tr>
+                <td>网卡接收(Kbit/s)</td>
+                <td id="network-receive-wlan0"></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Base JS -->
+    <% include ../partials/jsbase.ejs %>
+    <!-- Other JS -->
+    <script src="/javascript/dash_0.js"></script>
+
+  </body>
+
+</html>
